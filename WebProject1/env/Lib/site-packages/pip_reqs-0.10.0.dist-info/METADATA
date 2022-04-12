@@ -1,0 +1,168 @@
+Metadata-Version: 2.1
+Name: pip-reqs
+Version: 0.10.0
+Summary: Helpers for dealing with pip requirements
+Home-page: https://divio.com
+Author: Divio AG
+Author-email: info@divio.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+pip-reqs
+========
+
+Command line tools to streamline and speed up management of pip requirements using a remote wheels proxy instance.
+
+
+Release
+-------
+
+To release a new version, update the CHANGELOG.rst file, update the version in the ``pip_reqs/__init__.py`` file and execute the following commands::
+
+   python3 setup.py sdist bdist_wheel
+   twine upload dist/*
+
+
+
+CHANGELOG
+=========
+
+0.10.0 (2021-07-02)
+-------------------
+
+* Drop compatibility with python < 3.6.
+* Drop comptaibility with pip < 20.
+* Ensure compatibility with pip 21.x.
+
+
+0.9.1 (2021-03-26)
+------------------
+
+* Further improved handling of dependency resolution errors.
+
+
+0.9.0 (2020-12-30)
+------------------
+
+* Ensure compatibility with pip 20.3.x.
+* Drop support for pip < 19.x.
+* Add python 3.9 to the build matrix.
+* Properly handle dependency resolution errors.
+
+
+0.8.6 (2020-07-16)
+------------------
+
+* Ensure compatibility with pip 20.1.x.
+* Add Python 3.8 to the build matrix.
+
+
+0.8.5 (2020-02-10)
+------------------
+
+* Ensure compatibility with pip 20.0.x.
+
+
+0.8.4 (2020-01-09)
+------------------
+
+* Ensure compatibility with pip 19.3.x.
+
+
+0.8.3 (2019-08-05)
+------------------
+
+* Open files in unicode mode. For both ``compile`` and ``resolve``.
+
+
+0.8.2 (2019-08-05)
+------------------
+
+* Open files in unicode mode.
+
+
+0.8.1 (2019-08-03)
+------------------
+
+* Ensure compatibility with pip 19.2.x.
+
+
+0.8.0 (2019-03-27)
+------------------
+
+* Add tests
+* Ensure compatibility with pip 18.x and pip 19.x.
+* Ensure compatibility with Python 2.7, 3.6, and 3.7.
+
+
+0.7.3 (2019-03-27)
+------------------
+
+* Remove `process_dependency_link` support (pip >= 19.0 compatibility).
+
+
+0.7.2 (2019-01-11)
+------------------
+
+* Bring back default argument values.
+
+
+0.7.1 (2019-01-11)
+------------------
+
+* Fix issues with pip upgrade.
+
+
+0.7 (2019-01-09)
+----------------
+
+* Drop Python 2.7 compatibility.
+* Drop support for pip<10.
+* Drop dependencies (click and requests).
+* Use black for formatting.
+
+
+0.6 (2018-08-20)
+----------------
+
+* Compatibility with pip>=10.
+
+
+0.5 (2016-09-14)
+----------------
+
+* Better error reporting.
+
+
+0.4 (2016-08-24)
+----------------
+
+* Python 3 compatibility.
+
+
+0.3 (2016-08-24)
+----------------
+
+* Rename package from pip_reqs to pip-reqs.
+
+
+0.2 (2016-08-24)
+----------------
+
+* Build universal wheels.
+
+
+0.1 (2016-08-24)
+----------------
+
+* Initial release.
+
+
